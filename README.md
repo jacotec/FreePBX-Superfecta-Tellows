@@ -13,5 +13,5 @@ Copy the file to /var/www/html/admin/modules/superfecta/sources . It'll be avail
 * SPAM Threshold: The Tellows score from which on a caller is marked as spam. Defaults to 7.
 * COMMENTS Threshold: The number must have at least this number of comments to be marked as spam. Defaults to 2.
 * SEARCHES Threshold: The number must have at least this number of searches to be marked as spam. Defaults to 5.
-* Tellows Key: Your Tellows API key as MD5 hash. The module currently works also without a key, but it's not clear if this is limited by Tellows.
+* Tellows Key: Your Tellows API key as MD5 hash. If the API key is missing or not valid, a debug message will mention this. No data will be returned by this source in this case.
 
