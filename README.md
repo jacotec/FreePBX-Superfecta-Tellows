@@ -4,7 +4,7 @@ This module can be used for Spam detection against the Tellows online service (G
 Thanks to @Igaetz in the FreePBX forum for his idea and the initial work on this script.
 
 ## Installation
-Copy the file to /var/www/html/admin/modules/superfecta/sources . It'll be available immediately in your Superfecta list and you can configure and use it.
+Copy the file to /var/www/html/admin/modules/superfecta/sources. Make sure to change the file owner to asterisk:asterisk. It'll be available immediately in your Superfecta list and you can configure and use it.
 
 *Attention*: An update of the Superfecta module unfortunately seems to delete all other files, you might need to disable automatic module updates and copy the file again after a module update. All settings will be preserved.
 
