@@ -24,7 +24,7 @@ class TellowsAPI extends superfecta_base {
 				'default' => 5
 			),
 			'Tellows_Key' => array(
-				'description' => _('Tellows API key in MD5 format).'),
+				'description' => _('Tellows API key in MD5 format.'),
 				'type' => 'text',
 				'default' => ''
 			)
@@ -53,6 +53,7 @@ class TellowsAPI extends superfecta_base {
 
 			   $score = $value;
 			   if ($score >= $run_param['SPAM_Threshold'] AND $comments >= $run_param['COMMENTS_Threshold'] AND $searches >= $run_param['SEARCHES_Threshold']) {
+			       $this->spam_count = intval($score);		// Set Spam count (Which reflects to the Threshold for the SPAM interception)
 				   $this->spam = true;
 				   $this->DebugPrint(" "._("determined to be SPAM"));
 			   } else {
